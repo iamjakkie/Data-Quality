@@ -18,5 +18,5 @@ The metadata plays an important role in the quality assessment, it works as a li
 - [Indexes] <- optional
 Every feature gets calculated with formula, using weights:
 1. Empty Tables:
-F<sub>ET</sub> =\frac{&theta;<sub>o</sub> x + &theta;<sub>1</sub>x}{2}
 
+<img src="https://latex.codecogs.com/svg.latex?F_{ET}=\frac{\sum_{1}^{N}ET}{n},&space;where:&space;ET=\begin{cases}&space;&&space;\text{&space;1,&space;if&space;table&space;is&space;empty}&space;\\&space;&&space;\text{&space;0&space;otherwise&space;}&space;\end{cases}" title="F_{ET}=\frac{\sum_{1}^{N}ET}{n}, where: ET=\begin{cases} & \text{ 1, if table is empty} \\ & \text{ 0 otherwise } \end{cases}" />
