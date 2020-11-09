@@ -23,3 +23,10 @@ Every feature gets calculated with formula, using weights:
 2. Metadata as data means that table consists of just a bunch of foreign keys
 
 <img src="https://latex.codecogs.com/svg.latex?F_{MT}=\frac{\sum_{1}^{n}MT}{n},&space;where:&space;MT=\begin{cases}&space;&&space;\text{&space;1,&space;if&space;table&space;can&space;be&space;qualified&space;as&space;metadata}&space;\\&space;&&space;\text{&space;0&space;otherwise&space;}&space;\end{cases}" title="F_{MT}=\frac{\sum_{1}^{n}MT}{n}, where: MT=\begin{cases} & \text{ 1, if table can be qualified as metadata} \\ & \text{ 0 otherwise } \end{cases}" />
+
+3. Lacking relations - these are attributes present in various entities not marked as foreign keys and marked as a primary key in a 'source' entity. 
+
+<img src="https://latex.codecogs.com/gif.latex?F_{LFK}=\frac{\sum_{1}^{n}LFK}{n},&space;where:&space;LFK&space;=&space;\text{&space;number&space;of&space;abandoned&space;foreign&space;keys&space;(number&space;of&space;tables&space;referencing&space;this&space;PK)&space;}" title="F_{LFK}=\frac{\sum_{1}^{n}LFK}{n}, where: LFK = \text{ number of abandoned foreign keys (number of tables referencing this PK) }" />
+
+### Dimensions:
+1. Completness
