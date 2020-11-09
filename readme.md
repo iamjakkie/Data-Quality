@@ -20,3 +20,6 @@ Every feature gets calculated with formula, using weights:
 1. Empty Tables:
 
 <img src="https://latex.codecogs.com/svg.latex?F_{ET}=\frac{\sum_{1}^{N}ET}{n},&space;where:&space;ET=\begin{cases}&space;&&space;\text{&space;1,&space;if&space;table&space;is&space;empty}&space;\\&space;&&space;\text{&space;0&space;otherwise&space;}&space;\end{cases}" title="F_{ET}=\frac{\sum_{1}^{N}ET}{n}, where: ET=\begin{cases} & \text{ 1, if table is empty} \\ & \text{ 0 otherwise } \end{cases}" />
+2. Metadata as data means that table consists of just a bunch of foreign keys
+
+<img src="https://latex.codecogs.com/svg.latex?F_{MT}=\frac{\sum_{1}^{n}MT}{n},&space;where:&space;MT=\begin{cases}&space;&&space;\text{&space;1,&space;if&space;table&space;can&space;be&space;qualified&space;as&space;metadata}&space;\\&space;&&space;\text{&space;0&space;otherwise&space;}&space;\end{cases}" title="F_{MT}=\frac{\sum_{1}^{n}MT}{n}, where: MT=\begin{cases} & \text{ 1, if table can be qualified as metadata} \\ & \text{ 0 otherwise } \end{cases}" />
