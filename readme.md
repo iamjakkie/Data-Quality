@@ -29,4 +29,8 @@ Every feature gets calculated with formula, using weights:
 <img src="https://latex.codecogs.com/gif.latex?F_{LFK}=\frac{\sum_{1}^{n}LFK}{n},&space;where:&space;LFK&space;=&space;\text{&space;number&space;of&space;abandoned&space;foreign&space;keys&space;(number&space;of&space;tables&space;referencing&space;this&space;PK)&space;}" title="F_{LFK}=\frac{\sum_{1}^{n}LFK}{n}, where: LFK = \text{ number of abandoned foreign keys (number of tables referencing this PK) }" />
 
 ### Dimensions:
-1. Completness
+1. Completeness - To verify the quality of inserted data it is recommended to check values, which could indicate empty values i.e. NULL, 'N/A', 'None' etc. Using helper functions there is a special lookup table created and used for fuzzy matching for completeness. 
+<img src="https://latex.codecogs.com/gif.latex?Completness&space;=&space;1&space;-&space;(W_{1}&space;*{Completness_{A}}&space;&plus;&space;W_{1}&space;*{Completness_{T}}&space;&plus;&space;W_{1}&space;*{Completness_{D}})" title="Completness = 1 - (W_{1} *{Completness_{A}} + W_{1} *{Completness_{T}} + W_{1} *{Completness_{D}})" />
+, where:
+CompletnessA stands for Completness of attributes and is denoted by:
+<img src="https://latex.codecogs.com/gif.latex?{Completeness_{A}}&space;=&space;\frac{\sum_{1}^{n}\frac{\sum_{1}^{m}KK_{mn}}{m}}{n}" title="{Completeness_{A}} = \frac{\sum_{1}^{n}\frac{\sum_{1}^{m}KK_{mn}}{m}}{n}" />
