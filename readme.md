@@ -33,4 +33,6 @@ Every feature gets calculated with formula, using weights:
 <img src="https://latex.codecogs.com/gif.latex?Completness&space;=&space;1&space;-&space;(W_{1}&space;*{Completness_{A}}&space;&plus;&space;W_{1}&space;*{Completness_{T}}&space;&plus;&space;W_{1}&space;*{Completness_{D}})" title="Completness = 1 - (W_{1} *{Completness_{A}} + W_{1} *{Completness_{T}} + W_{1} *{Completness_{D}})" />
 , where:
 CompletnessA stands for Completness of attributes and is denoted by:
-<img src="https://latex.codecogs.com/gif.latex?{Completeness_{A}}&space;=&space;\frac{\sum_{1}^{n}\frac{\sum_{1}^{m}KK_{mn}}{m}}{n}" title="{Completeness_{A}} = \frac{\sum_{1}^{n}\frac{\sum_{1}^{m}KK_{mn}}{m}}{n}" />
+<img src="https://latex.codecogs.com/svg.latex?{Completeness_{A}}&space;=&space;\frac{\sum_{1}^{n}\frac{\sum_{1}^{a}\frac{\sum_{1}^{t}KA_{tan}}{t}}{a}}{n}" title="{Completeness_{A}} = \frac{\sum_{1}^{n}\frac{\sum_{1}^{a}\frac{\sum_{1}^{t}KA_{tan}}{t}}{a}}{n}" />, where: 
+<img src="https://latex.codecogs.com/svg.latex?KA_{tan}=\begin{cases}&space;&&space;\text{&space;1,&space;if&space;tuple&space;t&space;has&space;value&space;set&space;for&space;attribute&space;a&space;in&space;relation&space;n}&space;\\&space;&&space;\text{&space;0&space;otherwise&space;}&space;\end{cases}" title="KA_{tan}=\begin{cases} & \text{ 1, if tuple t has value set for attribute a in relation n} \\ & \text{ 0 otherwise } \end{cases}" />
+and n denotes number of relations, a denotes number of attributes, t denotes number of tuples. 
